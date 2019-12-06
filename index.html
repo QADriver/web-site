@@ -22,8 +22,8 @@
             z-index: 0;
         }
 
-        bolder {
-            font-weight: bolder;
+        .bolder {
+            font-weight: 400;
         }
     </style>
 </head>
@@ -38,9 +38,12 @@
             <li><a href="#about" class="grey-text text-lighten-4">About Us</a></li>
         </ul>
 
-        <ul id="nav-mobile" class="sidenav">
+        <ul id="nav-mobile" class="sidenav show-on-medium-and-down">
+            <li><a href="#intro" class="grey-text text-lighten-4 sidenav-close">Intro</a></li>
+            <li><a href="#expertise" class="grey-text text-lighten-4 sidenav-close">Expertise</a></li>
+            <li><a href="#about" class="grey-text text-lighten-4 sidenav-close">About Us</a></li>
         </ul>
-        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons grey-text text-lighten-4">menu</i></a>
     </div>
 </nav>
 
@@ -101,7 +104,7 @@
     <div class="section no-pad-bot">
         <div class="container">
             <div class="row center">
-                <h1 class="header col s12 light left">Fields of Expertise</h1>
+                <h1 class="header col s12 light left bolder">Fields of Expertise</h1>
             </div>
         </div>
     </div>
@@ -156,7 +159,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row hide-on-small-only">
             <div class="col s12 m2">
                 <p class="center-align">KAdkjaKd askjd kljasdl kjasdkljas djalsjd askdj kasjdkljas.</p>
             </div>
@@ -188,7 +191,7 @@
     <div class="section no-pad-bot">
         <div class="container">
             <div class="row center">
-                <h1 class="header col s12 light left">Who are we?</h1>
+                <h1 class="header col s12 light left bolder">Who are we?</h1>
             </div>
         </div>
     </div>
@@ -206,7 +209,7 @@
                     <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="img/pera.png">
                     </div>
-                    <div class="card-content blue-grey darken-4">
+                    <div class="card-content blue-grey darken-4  hide-on-small-only">
                         <span class="card-title activator white-text">Petar Tankosic</span>
                     </div>
                     <div class="card-reveal">
@@ -223,7 +226,7 @@
                     <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator" src="img/iske.png">
                     </div>
-                    <div class="card-content blue-grey darken-4">
+                    <div class="card-content blue-grey darken-4  hide-on-small-only">
                         <span class="card-title activator white-text">Ivan Markovic</span>
                     </div>
                     <div class="card-reveal">
@@ -246,7 +249,7 @@
                 <i class="fa fa-linkedin"></i></a>
         </li>
         <li>
-            <a class="btn-floating blue-grey darken-3">
+            <a href="https://github.com/QADriver" target="_blank" class="btn-floating blue-grey darken-3">
                 <i class="fa fa-github"></i></a>
         </li>
         <li>
@@ -277,7 +280,7 @@
                     </li>
                     <li>
                         <div class="row">
-                            <a href="https://www.github.com" target="_blank"
+                            <a href="https://github.com/QADriver" target="_blank"
                                class="waves-effect waves-light btn col s12 social github blue-grey darken-3">
                                 <i class="fa fa-github"></i>&nbsp;View our GitHub</a>
                         </div>
@@ -298,15 +301,5 @@
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/materialize.js"></script>
 <script src="js/init.js"></script>
-<script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', function () {
-        var elems = document.querySelectorAll('.fixed-action-btn');
-        var instances = M.FloatingActionButton.init(elems, {
-            direction: 'left'
-        });
-    });
-</script>
-
-
 </body>
 </html>
